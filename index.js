@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 
-const templatePath = './template/';
+const templatePath = `${__dirname}/template/`;
 const CURRENT_DIRECTORY = process.cwd();
 
 function createDirectoryFromTemplate (sourcePath, newProjectPath) {
@@ -15,14 +15,11 @@ function createDirectoryFromTemplate (sourcePath, newProjectPath) {
         if (stats.isFile()) {
             const fileContent = fs.readFileSync(filePath, 'utf8');
             const newFilePath = `${CURRENT_DIRECTORY}/${newProjectPath}/${file}`;
-
             fs.writeFileSync(newFilePath, fileContent, 'utf8');
         } else if (stats.isDirectory()) {
             fs.mkdirSync(`${CURRENT_DIRECTORY}/${newProjectPath}/${file}`);
-            
             createDirectoryFromTemplate(`${sourcePath}/${file}`, `${newProjectPath}/${file}`);
-          }
-
+        }
     });
 }
 

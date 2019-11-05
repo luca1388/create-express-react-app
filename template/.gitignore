@@ -1,0 +1,21 @@
+# Logs
+logs
+*.log
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# nyc test coverage
+.nyc_output
+
+# Dependency directories
+node_modules/
+
+# dotenv environment variables file
+.env
+
+# next.js build output
+.next
+
+# Output folder
+dist/

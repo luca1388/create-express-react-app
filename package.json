@@ -1,12 +1,8 @@
 {
   "name": "cura",
   "version": "1.0.0",
-  "description": "",
+  "description": "Generator module to create a new basic project based on React and Express.js",
   "main": "index.js",
-  "scripts": {
-    
-  },
-  "author": "",
   "license": "MIT",
   "bin": {
     "cura": "./index.js"
