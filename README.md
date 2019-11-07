@@ -1,4 +1,4 @@
-# cura
+# Create Express React App
 
 This is a project generator that allows to create your own web application based on Express.js and React. Every new project is created starting from a template using Webpack to create the client bundle that is served by Express.js on the backend.
 The goal of this package is to have a quick start when configuring a new project using this stack. The output project has a basic and mainly used set of configurations.
@@ -7,16 +7,16 @@ The goal of this package is to have a quick start when configuring a new project
 
 ### Installing
 
-To globally install cura:
+To globally install the package:
 
 ```
-npm install -g cura
+npm install -g create-express-react-app
 ```
 
 Now to create a new `my-project` app just run: 
 
 ```
-cura my-project
+create-express-react-app my-project
 ```
 
 This will create a `my-project` folder in the current path that contains all the files of the basic structure of the app.  Inside the new created folder install the dependencies:

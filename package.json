@@ -1,21 +1,21 @@
 {
-  "name": "cura",
+  "name": "create-express-react-app",
   "version": "1.0.0",
   "description": "Generator module to create a basic project based on React and Express.js",
   "main": "index.js",
   "license": "MIT",
   "bin": {
-    "cura": "./index.js"
+    "create-express-react-app": "./index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/luca1388/cura.git"
+    "url": "git+https://github.com/luca1388/create-express-react-app.git"
   },
   "author": "luca1388",
   "bugs": {
-    "url": "https://github.com/luca1388/cura/issues"
+    "url": "https://github.com/luca1388/create-express-react-app/issues"
   },
-  "homepage": "https://github.com/luca1388/cura#readme",
+  "homepage": "https://github.com/luca1388/create-express-react-app#readme",
   "keywords": [
     "react",
     "express",
