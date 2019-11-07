@@ -4,6 +4,18 @@
   "description": "Generator module to create a basic project based on React and Express.js",
   "main": "index.js",
   "license": "MIT",
+  "bin": {
+    "cura": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luca1388/cura.git"
+  },
+  "author": "luca1388",
+  "bugs": {
+    "url": "https://github.com/luca1388/cura/issues"
+  },
+  "homepage": "https://github.com/luca1388/cura#readme",
   "keywords": [
     "react",
     "express",
@@ -12,8 +24,5 @@
     "generator",
     "javascript",
     "nodejs"
-  ],
-  "bin": {
-    "cura": "./index.js"
-  }
+  ]
 }
