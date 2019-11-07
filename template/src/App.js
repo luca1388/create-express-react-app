@@ -3,10 +3,10 @@ import css from './App.css';
 import myImage from '../public/icon.png';
 
 const App = props => {
-    const [ data, setData ] = useState('');
+    const [ response, setResponse ] = useState('');
     useEffect( () => {
-        fetch('/api/test').then(response => response.json()).then(data => {
-            setData(data.data);
+        fetch('/api/hello').then(response => response.json()).then(data => {
+            setResponse(data.data);
         }).catch(err => {
             console.log(err);
         });
@@ -14,7 +14,7 @@ const App = props => {
 
     return (
         <div>
-            <h1 className={css.App}>Hello { data }</h1>
+            <h1 className={css.App}>Hello { response }</h1>
             <img src={myImage} />
         </div>
     );
