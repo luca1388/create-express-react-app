@@ -1,7 +1,7 @@
 # cura
 
 This is a project generator that allows to create your own web application based on Express.js and React. Every new project is created starting from a template using Webpack to create the client bundle that is served by Express.js on the backend.
-The goal of this package is to have a quick start when configuring a new project using this stack. Many other tools are doing that but usually they provide a very huge amount of configuration that in most of the cases are not needed. This project instead provide a basic and mainly used set of configurations.
+The goal of this package is to have a quick start when configuring a new project using this stack. The output project has a basic and mainly used set of configurations.
 
 ## Getting Started
 
@@ -49,7 +49,7 @@ npm run debug
 npm run server
 ```
 
-### Features
+### What’s Included?
 - **Babel**: configured with [@babel/preset-react](https://babeljs.io/docs/en/babel-preset-react) and [@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env) to transpile ES2015 code using [core-js@3](https://babeljs.io/docs/en/babel-preset-env#corejs) to handle polyfills.
 - **Webpack**: project build is available for development mode in `webpack.dev.js` and for production mode in `webpack.prod.js`; options shared between them are defined in `webpack.common.js` config file. Such configurations allow to import:
     - js file: `import App from './src/App';`
