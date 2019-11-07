@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import css from './App.css';
-import myImage from '../public/icon.png';
 
 const App = props => {
     const [ response, setResponse ] = useState('');
@@ -15,7 +14,6 @@ const App = props => {
     return (
         <div>
             <h1 className={css.App}>Hello { response }</h1>
-            <img src={myImage} />
         </div>
     );
 };
